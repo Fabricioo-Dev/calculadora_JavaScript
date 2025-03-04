@@ -24,6 +24,7 @@ Este proyecto consiste en una calculadora simple desarrollada con HTML, CSS y Ja
    
 2. Abre el archivo index.html en tu navegador.
 3. Ingresa dos números y selecciona la operación que deseas realizar.
+   
 4.El resultado se mostrará debajo de la calculadora.
 
 Contribuciones
