@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Calculadora con JavaScript</h1>
+    </header>
+    <main>
+        <div class="calculadora">
+            <div class="form_calculadora">
+                <form action="" class="form">
+                    <h3>Calculadora</h3>
+                    <label for="">Ingresar un número</label>
+                    <input type="number" class="numero1" required>
+                    <label for="operacion">Operación:</label>
+                    <select id="operacion" class="operador" required>
+                        <option value="sumar">+</option>
+                        <option value="restar">-</option>
+                        <option value="multiplicar">×</option>
+                        <option value="dividir">÷</option>
+                    </select>
+                    <label for="">Ingresar otro número</label>
+                    <input type="number" class="numero2" required>
+                    <input type="submit" value="Cácular" class="btn_enviar">
+                </form>
+            </div>
+            <div class="resultado_calculadora">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span><b>Creado por FABRICIO FUNES</b></span>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>

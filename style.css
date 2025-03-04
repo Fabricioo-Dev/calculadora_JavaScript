@@ -1,0 +1,209 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body - Estructura general */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+}
+
+/* Header fijo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #282846;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+/* Footer fijo */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #282846;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Ajusta el contenido principal */
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5rem;
+    /* Espacio para el header */
+    padding-bottom: 4rem;
+    /* Espacio para el footer */
+}
+
+/* Contenedor de la calculadora */
+.calculadora {
+    background: #2d2d4d;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 25rem;
+    text-align: center;
+}
+
+/* Título del formulario */
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Formulario con Grid */
+.form_calculadora {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Inputs y select */
+input,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    background: #f8f8f8;
+    color: #333;
+    margin-bottom: 0.7rem;
+}
+
+/* Mejora en select */
+select {
+    cursor: pointer;
+    background: #1e1e2f;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* Botón animado */
+input[type="submit"] {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+/* Efecto hover y clic */
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 198, 255, 0.8);
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Resultado */
+.resultado_calculadora {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+.resultado_calculadora .total_formulario b{
+    font-size: 1.7rem;
+    color: #00A8E8;
+}
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .form_calculadora {
+        gap: 0.8rem;
+    }
+
+    input,
+    select {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1.1rem;
+        padding: 0.7rem;
+    }
+
+    .resultado_calculadora {
+        font-size: 1.2rem;
+    }
+
+    .resultado_calculadora .total_formulario b {
+        font-size: 1.5rem;
+    }
+}
+
+/* Para pantallas de teléfonos móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    .calculadora {
+        padding: 1.5rem;
+        width: 100%;
+        max-width: none;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .form_calculadora {
+        gap: 0.6rem;
+    }
+
+    input,
+    select {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .resultado_calculadora {
+        font-size: 1rem;
+    }
+
+    .resultado_calculadora .total_formulario b {
+        font-size: 1.3rem;
+    }
+}
